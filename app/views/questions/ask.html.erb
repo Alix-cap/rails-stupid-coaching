@@ -1,7 +1,6 @@
-<form action="/answer" method="get">
-  <input type="text" name="inputquestion" value="<%= params[:inputquestion] %>">
-  <input type="submit" value="Ask!">
+<form action="/answer" method="get" class="mt-4">
+  <div class="mb-3">
+    <input type="text" name="inputquestion" value="<%= params[:inputquestion] %>" class="form-label">
+    <input type="submit" value="Ask!" class="form-control" class="btn btn-primary">
+  </div>
 </form>
-
-
-
