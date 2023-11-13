@@ -1,0 +1,14 @@
+<h1> <%= @question %></h1>
+
+<p> <%= if @question == "I am going to work"
+      @answer[0]
+    elsif @question.include? "?"
+      @answer[1]
+    else
+      @answer[2]
+    end %>
+</p>
+
+<!-- ajouter lien vers /ask avec link_to -->
+
+<%= link_to 'Ask another question', '/ask' %>
